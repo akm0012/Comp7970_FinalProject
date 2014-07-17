@@ -465,6 +465,7 @@
 				49E33C8E19774F11000A50E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49E33C8F19774F11000A50E9 /* Build configuration list for PBXNativeTarget "Ticket GateTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				49E33C9119774F11000A50E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
