@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495522B2197818B3008E4A2E /* Ticket_Column.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495522B1197818B3008E4A2E /* Ticket_Column.xib */; };
 		49E33C5B19774F11000A50E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E33C5A19774F11000A50E9 /* Foundation.framework */; };
 		49E33C5D19774F11000A50E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E33C5C19774F11000A50E9 /* CoreGraphics.framework */; };
 		49E33C5F19774F11000A50E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E33C5E19774F11000A50E9 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495522B1197818B3008E4A2E /* Ticket_Column.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ticket_Column.xib; sourceTree = "<group>"; };
 		49E33C5719774F11000A50E9 /* Ticket Gate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ticket Gate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E33C5A19774F11000A50E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49E33C5C19774F11000A50E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +120,7 @@
 				49E33C6919774F11000A50E9 /* akm0012_AppDelegate.h */,
 				49E33C6A19774F11000A50E9 /* akm0012_AppDelegate.m */,
 				49E33C6C19774F11000A50E9 /* Main.storyboard */,
+				495522B1197818B3008E4A2E /* Ticket_Column.xib */,
 				49E33C6F19774F11000A50E9 /* akm0012_FirstViewController.h */,
 				49E33C7019774F11000A50E9 /* akm0012_FirstViewController.m */,
 				49E33C7219774F11000A50E9 /* akm0012_SecondViewController.h */,
@@ -237,6 +240,7 @@
 				49E33C7619774F11000A50E9 /* Images.xcassets in Resources */,
 				49E33C6519774F11000A50E9 /* InfoPlist.strings in Resources */,
 				49E33C6E19774F11000A50E9 /* Main.storyboard in Resources */,
+				495522B2197818B3008E4A2E /* Ticket_Column.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
