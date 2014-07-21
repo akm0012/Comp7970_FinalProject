@@ -10,4 +10,8 @@
 
 @interface akm0012_FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *ticket_type_switch_1;
+
+- (IBAction)hide_unhide_ticket_row:(UISwitch *)sender;
+
 @end
