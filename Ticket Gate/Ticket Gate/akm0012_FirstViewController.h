@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "akm0012_SecondViewController.h"
 
-@interface akm0012_FirstViewController : UIViewController
+@interface akm0012_FirstViewController : UIViewController <UITabBarControllerDelegate>
+
+@property (nonatomic, strong) akm0012_SecondViewController *second_view_controller;
+@property BOOL ticket_1_active;
 
 @property (weak, nonatomic) IBOutlet UISwitch *ticket_type_switch_1;
 

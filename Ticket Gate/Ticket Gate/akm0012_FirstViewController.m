@@ -7,11 +7,10 @@
 //
 
 #import "akm0012_FirstViewController.h"
-#import "akm0012_SecondViewController.h"
 
 @interface akm0012_FirstViewController ()
 
-@property (nonatomic, strong) akm0012_SecondViewController *second_view_controller;
+@property BOOL test;
 
 @end
 
@@ -22,7 +21,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.tabBarController.delegate = self;
+    
     self.second_view_controller = [[akm0012_SecondViewController alloc] init];
+    
+    self.ticket_1_active = self.ticket_type_switch_1.isOn;
     
     
 }
@@ -40,15 +43,12 @@
             // Make ticket type 1 unhidden
             if (sender.isOn) {
                 // Make ticket type 1 unhidden
-                int i = 0;
+                self.ticket_1_active = YES;
                 
             }
             else {
                 // Make ticket type 1 hidden
-                int j = 0;
-                [self.second_view_controller hide_ticket_view:1];
-                
-//                self.second_view_controller
+                self.ticket_1_active = NO;
                 
             }
             break;
@@ -57,5 +57,20 @@
             break;
     }
     
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    self.second_view_controller = (akm0012_SecondViewController *) [tabBarController.viewControllers objectAtIndex:1];
+    
+//    self.second_view_controller.ticket_row_image_view_1.hidden = self.test;
+    
+    if (self.ticket_1_active) {
+        self.second_view_controller.ticket_row_image_view_1.hidden = NO;
+    }
+    
+    else {
+        self.second_view_controller.ticket_row_image_view_1.hidden = YES;
+    }
 }
 @end

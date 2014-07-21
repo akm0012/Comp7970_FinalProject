@@ -10,9 +10,7 @@
 
 @interface akm0012_SecondViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *ticket_row_image_view_1;
-
--(void) hide_ticket_view:(int)ticket_to_hide;
+@property (strong, nonatomic) IBOutlet UIImageView *ticket_row_image_view_1;
 
 
 @end
