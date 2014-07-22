@@ -10,7 +10,7 @@
 
 @interface akm0012_FirstViewController ()
 
-@property BOOL test;
+@property BOOL ticket_type_4_isUp;
 
 @end
 
@@ -44,7 +44,7 @@
 - (IBAction)hide_unhide_ticket_row:(UISwitch *)sender {
     
     switch (sender.tag) {
-        // Ticket Type 2
+            // Ticket Type 2
         case 2:
             if (sender.isOn) {
                 // Make ticket type 2 unhidden
@@ -58,7 +58,7 @@
             }
             break;
             
-        // Ticket Type 3
+            // Ticket Type 3
         case 3:
             if (sender.isOn) {
                 // Make ticket type 3 unhidden
@@ -72,7 +72,7 @@
             }
             break;
             
-        // Ticket Type 4
+            // Ticket Type 4
         case 4:
             if (sender.isOn) {
                 // Make ticket type 3 unhidden
@@ -108,53 +108,96 @@
 
 - (IBAction)move_up_textField:(UITextField *)sender {
     
-//  //  CGRect bounds = self.view.bounds;
-//    
-//    CGFloat cost_edit_width = 97;
-//    CGFloat cost_edit_height = 30;
-//    
-//    self.ticket_cost_field_4.frame = CGRectMake(722, 287, cost_edit_width, cost_edit_height);
-//    
-//    // X value - 722 , Y - 287
-//    
-//    
-//   // self.ticket_type_switch_4.frame = CGRectMake(90, 327, 51, 31);
+    if (sender.tag == 4) {
+        
+        // Animate moving the 4th ticket type up
+        
+        [UIView beginAnimations:@"animate" context:nil];
+        [UIView setAnimationDuration:0.5f];
+        [UIView setAnimationBeginsFromCurrentState: YES];
+        self.ticket_type_switch_4.frame = CGRectMake(90, 327, 51, 31);
+        self.ticket_type_label_4.frame = CGRectMake(185, 331, 138, 24);
+        self.ticket_name_field_4.frame = CGRectMake(402, 328, 241, 30);
+        self.ticket_cost_field_4.frame = CGRectMake(722, 328, 97, 30);
+        self.ticket_image_view_4.frame = CGRectMake(67, 294, 854, 103);
+        [UIView commitAnimations];
+        
+    }
     
-    // Animate moving the 4th ticket type up
-    
-    [UIView beginAnimations:@"animate" context:nil];
-    [UIView setAnimationDuration:0.5f];
-    [UIView setAnimationBeginsFromCurrentState: NO];
-    self.ticket_type_switch_4.frame = CGRectMake(90, 327, 51, 31);
-    self.ticket_type_label_4.frame = CGRectMake(185, 331, 138, 24);
-    self.ticket_name_field_4.frame = CGRectMake(402, 328, 241, 30);
-    self.ticket_cost_field_4.frame = CGRectMake(722, 328, 97, 30);
-    self.ticket_image_view_4.frame = CGRectMake(67, 294, 854, 103);
-    [UIView commitAnimations];
-    
-    
+    else if (sender.tag == 5) {
+        
+        // Animate moving the 5th ticket type up
+        
+        [UIView beginAnimations:@"animate" context:nil];
+        [UIView setAnimationDuration:0.5f];
+        [UIView setAnimationBeginsFromCurrentState: YES];
+        self.ticket_type_switch_5.frame = CGRectMake(90, 327, 51, 31);
+        self.ticket_type_label_5.frame = CGRectMake(185, 331, 138, 24);
+        self.ticket_name_field_5.frame = CGRectMake(402, 328, 241, 30);
+        self.ticket_cost_field_5.frame = CGRectMake(722, 328, 97, 30);
+        self.ticket_image_view_5.frame = CGRectMake(67, 294, 854, 103);
+        [UIView commitAnimations];
+        
+    }
     
 }
 
 - (IBAction)move_down_textField:(UITextField *)sender {
+    
+    // Animate moving the ticket type back to where it started
+    
+    if (sender.tag == 4) {
+        
+        if (!self.ticket_name_field_4.isSelected && !self.ticket_cost_field_4.isSelected) {
+            
+            [UIView beginAnimations:@"animate" context:nil];
+            [UIView setAnimationDuration:0.5f];
+            [UIView setAnimationBeginsFromCurrentState: YES];
+            self.ticket_type_switch_4.frame = CGRectMake(90, 449, 51, 31);
+            self.ticket_type_label_4.frame = CGRectMake(185, 453, 138, 24);
+            self.ticket_name_field_4.frame = CGRectMake(402, 450, 241, 30);
+            self.ticket_cost_field_4.frame = CGRectMake(722, 450, 97, 30);
+            self.ticket_image_view_4.frame = CGRectMake(67, 413, 854, 103);
+            [UIView commitAnimations];
+        }
+    }
+    
+    else if (sender.tag == 5) {
+        
+        if (!self.ticket_name_field_5.isSelected && !self.ticket_cost_field_5.isSelected) {
+            
+            [UIView beginAnimations:@"animate" context:nil];
+            [UIView setAnimationDuration:0.5f];
+            [UIView setAnimationBeginsFromCurrentState: YES];
+            self.ticket_type_switch_5.frame = CGRectMake(90, 531, 51, 31);
+            self.ticket_type_label_5.frame = CGRectMake(185, 535, 138, 24);
+            self.ticket_name_field_5.frame = CGRectMake(402, 532, 241, 30);
+            self.ticket_cost_field_5.frame = CGRectMake(722, 532, 97, 30);
+            self.ticket_image_view_5.frame = CGRectMake(67, 495, 854, 103);
+            [UIView commitAnimations];
+        }
+
+        
+    }
+    
 }
 
 - (IBAction)set_up_field_done_editing:(UITextField *)sender {
-
+    
     // Here I can check if the number values are valid
     
     // The Names will just have some default value if left empty
     
-//    switch (sender.tag) {
-//        // Ticket Type # 1 - Name Field
-//        case 1:
-//            self.second_view_controller.ticket_label_1.text = self.ticket_name_field_1.text;
-//            break;
-//            
-//        default:
-//            break;
-//    }
-
+    //    switch (sender.tag) {
+    //        // Ticket Type # 1 - Name Field
+    //        case 1:
+    //            self.second_view_controller.ticket_label_1.text = self.ticket_name_field_1.text;
+    //            break;
+    //
+    //        default:
+    //            break;
+    //    }
+    
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
@@ -162,11 +205,11 @@
     self.second_view_controller = (akm0012_SecondViewController *) [tabBarController.viewControllers objectAtIndex:1];
     
     /*  Here we check to see what ticket type numbers are active.
-        If the ticket type is active we display all the views.
-        We also set any text values we get from the set up screen.
+     If the ticket type is active we display all the views.
+     We also set any text values we get from the set up screen.
      
-        If the ticket type is not active, we hide all the views.
-    */
+     If the ticket type is not active, we hide all the views.
+     */
     
     // Ticket Type 1
     // Set the label from the set up text fields.
@@ -180,7 +223,7 @@
         self.second_view_controller.ticket_label_1.text = default_ticket_string_1;
         self.second_view_controller.subtotal_label_1.text = default_ticket_string_1;
         self.ticket_name_field_1.text = default_ticket_string_1;
-
+        
     }
     
     // Ticket Type 2
@@ -207,7 +250,7 @@
             self.second_view_controller.subtotal_label_2.text = default_ticket_string_2;
             self.ticket_name_field_2.text = default_ticket_string_2;
         }
-
+        
     }
     
     else {
@@ -240,13 +283,13 @@
         
         // If the field is left blank we give it a default name
         if ([self.second_view_controller.ticket_label_3.text isEqualToString:@""]) {
-           
+            
             NSString *default_ticket_string_3 = @"Default Ticket 3";
             self.second_view_controller.ticket_label_3.text = default_ticket_string_3;
             self.second_view_controller.subtotal_label_3.text = default_ticket_string_3;
             self.ticket_name_field_3.text = default_ticket_string_3;
         }
-
+        
     }
     
     else {
@@ -336,7 +379,21 @@
         self.second_view_controller.subtotal_num_display_5.hidden = YES;
         self.second_view_controller.subtotal_extras_5.hidden = YES;
     }
+    
+}
 
+- (IBAction)backgroundTap:(id)sender {
+    [self.ticket_name_field_1 resignFirstResponder];
+    [self.ticket_name_field_2 resignFirstResponder];
+    [self.ticket_name_field_3 resignFirstResponder];
+    [self.ticket_name_field_4 resignFirstResponder];
+    [self.ticket_name_field_5 resignFirstResponder];
+    
+    [self.ticket_cost_field_1 resignFirstResponder];
+    [self.ticket_cost_field_2 resignFirstResponder];
+    [self.ticket_cost_field_3 resignFirstResponder];
+    [self.ticket_cost_field_4 resignFirstResponder];
+    [self.ticket_cost_field_5 resignFirstResponder];
 }
 @end
 

@@ -51,4 +51,5 @@
 
 - (IBAction)move_up_textField:(UITextField *)sender;
 - (IBAction)move_down_textField:(UITextField *)sender;
+- (IBAction)backgroundTap:(id)sender;
 @end

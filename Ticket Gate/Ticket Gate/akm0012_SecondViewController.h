@@ -61,4 +61,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *subtotal_num_display_5;
 @property (weak, nonatomic) IBOutlet UILabel *subtotal_extras_5;
 
+- (IBAction)stepper_pressed:(UIStepper *)sender;
 @end
