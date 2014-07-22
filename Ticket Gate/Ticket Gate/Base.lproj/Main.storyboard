@@ -232,7 +232,7 @@
                             <action selector="backgroundTap:" destination="9pv-A4-QxB" eventType="touchDown" id="taZ-hS-Lgv"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Set Up" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Set Up" image="wrench" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="ticket_cost_field_1" destination="ePx-6C-6JR" id="Yhn-CN-kwE"/>
                         <outlet property="ticket_cost_field_2" destination="dgu-3U-4w4" id="7BU-B3-UEW"/>
@@ -774,7 +774,7 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cashier" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Cashier" image="cash" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="v1Y-g0-z67"/>
                     <connections>
                         <outlet property="cash_taken_label" destination="Gs5-CL-ppU" id="6ll-e5-CCx"/>
@@ -854,14 +854,14 @@
     <resources>
         <image name="blueButton" width="29" height="46"/>
         <image name="blue_square" width="518" height="131"/>
-        <image name="first" width="30" height="30"/>
+        <image name="cash" width="35" height="35"/>
         <image name="green_square" width="518" height="131"/>
         <image name="light_blue_box" width="43" height="43"/>
         <image name="light_blue_box_curved" width="518" height="568"/>
         <image name="line" width="401" height="6"/>
-        <image name="second" width="30" height="30"/>
         <image name="whiteButton" width="29" height="46"/>
         <image name="white_box" width="405" height="93"/>
+        <image name="wrench" width="50" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
