@@ -16,34 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box" translatesAutoresizingMaskIntoConstraints="NO" id="jAh-2u-OKa">
-                                <rect key="frame" x="20" y="67" width="984" height="639"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-Iu-aq1">
-                                <rect key="frame" x="67" y="169" width="854" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-E9-gvg">
-                                <rect key="frame" x="67" y="250" width="854" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="MWO-bb-197">
-                                <rect key="frame" x="67" y="335" width="854" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="LUY-Gf-xNa">
-                                <rect key="frame" x="67" y="413" width="854" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="Igj-VU-Ckm">
-                                <rect key="frame" x="67" y="495" width="854" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-d4-Ar2">
                                 <rect key="frame" x="36" y="723" width="1024" height="44"/>
                                 <items/>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box" translatesAutoresizingMaskIntoConstraints="NO" id="jAh-2u-OKa">
+                                <rect key="frame" x="20" y="67" width="984" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Up Your Event!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-U5-NBb">
                                 <rect key="frame" x="348" y="92" width="329" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,118 +31,153 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-Iu-aq1">
+                                <rect key="frame" x="67" y="169" width="854" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Type #1: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-ii-nHq">
                                 <rect key="frame" x="185" y="209" width="138" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3ZI-ya-fBh">
+                                <rect key="frame" x="402" y="206" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="set_up_field_done_editing:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="IEz-zp-8CZ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-6C-6JR">
+                                <rect key="frame" x="722" y="206" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="set_up_field_done_editing:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="q88-TG-0Jp"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-E9-gvg">
+                                <rect key="frame" x="67" y="250" width="854" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FeT-lf-WI4">
+                                <rect key="frame" x="90" y="286" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hide_unhide_ticket_row:" destination="9pv-A4-QxB" eventType="valueChanged" id="foA-ew-jfh"/>
+                                </connections>
+                            </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Type #2: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-CC-ssa">
                                 <rect key="frame" x="185" y="290" width="138" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tWg-wx-QPm">
+                                <rect key="frame" x="402" y="287" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgu-3U-4w4">
+                                <rect key="frame" x="722" y="287" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="MWO-bb-197">
+                                <rect key="frame" x="67" y="335" width="854" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-Mc-Szr">
+                                <rect key="frame" x="90" y="368" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hide_unhide_ticket_row:" destination="9pv-A4-QxB" eventType="valueChanged" id="dRA-wK-B2C"/>
+                                </connections>
+                            </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Type #3: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-pF-4Mi">
                                 <rect key="frame" x="185" y="372" width="138" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-0t-2fS">
+                                <rect key="frame" x="402" y="369" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffy-OJ-Amk">
+                                <rect key="frame" x="722" y="369" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="LUY-Gf-xNa">
+                                <rect key="frame" x="67" y="413" width="854" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A9T-mN-2qG">
+                                <rect key="frame" x="90" y="449" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hide_unhide_ticket_row:" destination="9pv-A4-QxB" eventType="valueChanged" id="HGW-YH-C3y"/>
+                                </connections>
+                            </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Type #4: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVv-uj-0d1">
                                 <rect key="frame" x="185" y="453" width="138" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NmH-Ae-R4a">
+                                <rect key="frame" x="402" y="450" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jms-zG-Emv">
+                                <rect key="frame" x="722" y="450" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="move_down_textField:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="Yyr-OE-vyh"/>
+                                    <action selector="move_up_textField:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="wcB-g2-L5u"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="Igj-VU-Ckm">
+                                <rect key="frame" x="67" y="495" width="854" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-cT-Y53">
+                                <rect key="frame" x="90" y="531" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hide_unhide_ticket_row:" destination="9pv-A4-QxB" eventType="valueChanged" id="acu-zl-AOP"/>
+                                </connections>
+                            </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Type #5: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-Te-mxK">
                                 <rect key="frame" x="185" y="535" width="138" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-Ub-O9C">
-                                <rect key="frame" x="90" y="205" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="hide_unhide_ticket_row:" destination="9pv-A4-QxB" eventType="valueChanged" id="3ZM-L5-b4o"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FeT-lf-WI4">
-                                <rect key="frame" x="90" y="286" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-Mc-Szr">
-                                <rect key="frame" x="90" y="368" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-cT-Y53">
-                                <rect key="frame" x="90" y="531" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A9T-mN-2qG">
-                                <rect key="frame" x="90" y="449" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ZI-ya-fBh">
-                                <rect key="frame" x="402" y="206" width="241" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-0t-2fS">
-                                <rect key="frame" x="402" y="369" width="241" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmH-Ae-R4a">
-                                <rect key="frame" x="402" y="450" width="241" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWg-wx-QPm">
-                                <rect key="frame" x="402" y="287" width="241" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-GN-Kil">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-GN-Kil">
                                 <rect key="frame" x="402" y="532" width="241" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-6C-6JR">
-                                <rect key="frame" x="722" y="206" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgu-3U-4w4">
-                                <rect key="frame" x="722" y="287" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffy-OJ-Amk">
-                                <rect key="frame" x="722" y="369" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jms-zG-Emv">
-                                <rect key="frame" x="722" y="450" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKy-Fg-eti">
                                 <rect key="frame" x="722" y="532" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-YJ-jBc">
                                 <rect key="frame" x="472" y="638" width="81" height="32"/>
@@ -183,7 +198,24 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Up" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="ticket_type_switch_1" destination="VJq-Ub-O9C" id="4Uc-De-SQV"/>
+                        <outlet property="ticket_cost_field_1" destination="ePx-6C-6JR" id="Yhn-CN-kwE"/>
+                        <outlet property="ticket_cost_field_2" destination="dgu-3U-4w4" id="7BU-B3-UEW"/>
+                        <outlet property="ticket_cost_field_3" destination="ffy-OJ-Amk" id="6E0-52-bWb"/>
+                        <outlet property="ticket_cost_field_4" destination="jms-zG-Emv" id="yng-5u-fYm"/>
+                        <outlet property="ticket_cost_field_5" destination="VKy-Fg-eti" id="2T4-za-aF8"/>
+                        <outlet property="ticket_image_view_4" destination="LUY-Gf-xNa" id="Zrr-Q4-7gL"/>
+                        <outlet property="ticket_image_view_5" destination="Igj-VU-Ckm" id="3HF-yQ-Qeu"/>
+                        <outlet property="ticket_name_field_1" destination="3ZI-ya-fBh" id="YIg-U5-n31"/>
+                        <outlet property="ticket_name_field_2" destination="tWg-wx-QPm" id="Qyp-Nc-Q2r"/>
+                        <outlet property="ticket_name_field_3" destination="jzb-0t-2fS" id="VLF-0O-qzE"/>
+                        <outlet property="ticket_name_field_4" destination="NmH-Ae-R4a" id="U6N-Q7-FUP"/>
+                        <outlet property="ticket_name_field_5" destination="tPn-GN-Kil" id="cWX-mB-mPB"/>
+                        <outlet property="ticket_type_label_4" destination="YVv-uj-0d1" id="oo1-zz-S2z"/>
+                        <outlet property="ticket_type_label_5" destination="ahq-Te-mxK" id="9C1-jZ-ZuI"/>
+                        <outlet property="ticket_type_switch_2" destination="FeT-lf-WI4" id="Lgh-3U-pG1"/>
+                        <outlet property="ticket_type_switch_3" destination="bXM-Mc-Szr" id="qyq-A9-G6D"/>
+                        <outlet property="ticket_type_switch_4" destination="A9T-mN-2qG" id="DIX-6U-Y0m"/>
+                        <outlet property="ticket_type_switch_5" destination="cvu-cT-Y53" id="MV2-z2-EiQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -206,7 +238,7 @@
                                 <rect key="frame" x="649" y="61" width="355" height="582"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-n5-O85">
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-n5-O85">
                                 <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
                                 <items>
                                     <navigationItem id="WaP-O7-m87"/>
@@ -398,7 +430,7 @@
                                 <rect key="frame" x="27" y="76" width="606" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-Hg-eBd">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-Hg-eBd">
                                 <rect key="frame" x="67" y="109" width="211" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -423,7 +455,7 @@
                                 <rect key="frame" x="27" y="198" width="606" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frh-5u-ZTi">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="frh-5u-ZTi">
                                 <rect key="frame" x="67" y="231" width="211" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -448,7 +480,7 @@
                                 <rect key="frame" x="27" y="322" width="606" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-C4-Hfi">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-C4-Hfi">
                                 <rect key="frame" x="67" y="355" width="211" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -473,7 +505,7 @@
                                 <rect key="frame" x="27" y="444" width="606" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMQ-Wn-YN3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pMQ-Wn-YN3">
                                 <rect key="frame" x="67" y="477" width="211" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -494,11 +526,11 @@
                                 <rect key="frame" x="467" y="486" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </stepper>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-JJ-Nz4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="light_blue_box_curved" translatesAutoresizingMaskIntoConstraints="NO" id="f9e-JJ-Nz4">
                                 <rect key="frame" x="27" y="569" width="606" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-Jn-IsO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-Jn-IsO">
                                 <rect key="frame" x="67" y="602" width="211" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
@@ -655,7 +687,47 @@
                     <tabBarItem key="tabBarItem" title="Cashier" image="second" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="v1Y-g0-z67"/>
                     <connections>
-                        <outlet property="ticket_row_image_view_1" destination="rxo-mj-b1n" id="E0i-b0-t6k"/>
+                        <outlet property="stepper_2" destination="PLd-mJ-zDs" id="K5d-ee-e8y"/>
+                        <outlet property="stepper_3" destination="ela-47-Es8" id="XzR-Yg-dkj"/>
+                        <outlet property="stepper_4" destination="Y21-5x-zi6" id="iNz-ax-VVQ"/>
+                        <outlet property="stepper_5" destination="uK7-9E-Ape" id="zQC-Aa-pKy"/>
+                        <outlet property="subtotal_extras_2" destination="sNu-Uf-j0l" id="uaP-cg-NsR"/>
+                        <outlet property="subtotal_extras_3" destination="baG-hw-T8l" id="HZD-mL-zHA"/>
+                        <outlet property="subtotal_extras_4" destination="eF3-zd-0OV" id="mjy-u9-Z49"/>
+                        <outlet property="subtotal_extras_5" destination="rgq-xM-wdJ" id="C2d-pM-sgq"/>
+                        <outlet property="subtotal_label_1" destination="bci-u4-Pip" id="QII-Zc-lhT"/>
+                        <outlet property="subtotal_label_2" destination="ky3-g5-0qe" id="QFb-aM-egh"/>
+                        <outlet property="subtotal_label_3" destination="qIj-FB-lPJ" id="cFL-rW-5Wo"/>
+                        <outlet property="subtotal_label_4" destination="4L4-hW-YkC" id="Bs2-n0-8iJ"/>
+                        <outlet property="subtotal_label_5" destination="1R5-rM-g4A" id="Jc1-Ch-Ob3"/>
+                        <outlet property="subtotal_num_display_1" destination="nc1-zS-ptA" id="C3n-Hh-HbO"/>
+                        <outlet property="subtotal_num_display_2" destination="7F4-hN-fbI" id="3JP-CR-fhQ"/>
+                        <outlet property="subtotal_num_display_3" destination="e5A-kj-M73" id="HcB-iQ-vLx"/>
+                        <outlet property="subtotal_num_display_4" destination="0kq-kK-Gaf" id="xtF-nR-dNq"/>
+                        <outlet property="subtotal_num_display_5" destination="Dqz-fR-fVk" id="BvC-tp-qBB"/>
+                        <outlet property="ticket_label_1" destination="zRf-Hg-eBd" id="BNu-RA-JCZ"/>
+                        <outlet property="ticket_label_2" destination="frh-5u-ZTi" id="rcU-CE-4og"/>
+                        <outlet property="ticket_label_3" destination="wlP-C4-Hfi" id="pOU-OL-bwm"/>
+                        <outlet property="ticket_label_4" destination="pMQ-Wn-YN3" id="4NA-Mo-Mtz"/>
+                        <outlet property="ticket_label_5" destination="GPF-Jn-IsO" id="jeX-ah-Utd"/>
+                        <outlet property="ticket_num_display_1" destination="bC5-ZM-76w" id="bhb-Mq-h2z"/>
+                        <outlet property="ticket_num_display_2" destination="BfN-IE-KDm" id="wFe-oe-NFW"/>
+                        <outlet property="ticket_num_display_3" destination="6Qg-DX-ZYA" id="qY0-55-tDR"/>
+                        <outlet property="ticket_num_display_4" destination="hqh-gn-MHc" id="niU-TO-FMC"/>
+                        <outlet property="ticket_num_display_5" destination="EXV-UT-bZD" id="Mg2-I7-AFf"/>
+                        <outlet property="ticket_row_image_view_2" destination="jXl-jq-Tuc" id="uXa-mB-loo"/>
+                        <outlet property="ticket_row_image_view_3" destination="Csv-ZM-Zpm" id="6lf-az-cYK"/>
+                        <outlet property="ticket_row_image_view_4" destination="P1f-Jj-b1f" id="jyW-S3-ubL"/>
+                        <outlet property="ticket_row_image_view_5" destination="f9e-JJ-Nz4" id="1U8-48-FKN"/>
+                        <outlet property="ticket_subtitle_1" destination="BFT-vr-iol" id="hcS-Wh-qQx"/>
+                        <outlet property="ticket_subtitle_2" destination="dTn-mm-kJg" id="rAH-TP-8tg"/>
+                        <outlet property="ticket_subtitle_3" destination="mL2-bQ-vWK" id="0SG-lR-UYn"/>
+                        <outlet property="ticket_subtitle_4" destination="cZJ-Sv-UsV" id="hIM-dG-CPd"/>
+                        <outlet property="ticket_subtitle_5" destination="lek-A9-tX0" id="9dU-LB-f5A"/>
+                        <outlet property="white_num_background_2" destination="Gf1-Sr-feM" id="lgs-6V-yX9"/>
+                        <outlet property="white_num_background_3" destination="LmA-zD-8wR" id="6XF-mT-FdN"/>
+                        <outlet property="white_num_background_4" destination="kxy-wi-c6G" id="Gkf-3Q-Gpd"/>
+                        <outlet property="white_num_background_5" destination="cBj-w2-Tx4" id="Ab9-Ia-sKw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
