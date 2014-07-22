@@ -46,7 +46,7 @@
 
 
 
-- (IBAction)set_up_field_done_editing:(UITextField *)sender;
+- (IBAction)cost_field_done_editing:(UITextField *)sender;
 - (IBAction)hide_unhide_ticket_row:(UISwitch *)sender;
 
 - (IBAction)move_up_textField:(UITextField *)sender;

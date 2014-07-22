@@ -11,6 +11,7 @@
 @interface akm0012_SecondViewController : UIViewController
 
 // UI compnents needed for ticket type #1 (this will always be active)
+@property (weak, nonatomic) IBOutlet UIStepper *stepper_1;
 @property (weak, nonatomic) IBOutlet UILabel *ticket_num_display_1;
 @property (weak, nonatomic) IBOutlet UILabel *ticket_label_1;
 @property (weak, nonatomic) IBOutlet UILabel *ticket_subtitle_1;
@@ -60,6 +61,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *subtotal_label_5;
 @property (weak, nonatomic) IBOutlet UILabel *subtotal_num_display_5;
 @property (weak, nonatomic) IBOutlet UILabel *subtotal_extras_5;
+
+// Ticket prices for each category
+@property float ticket_price_1;
+@property float ticket_price_2;
+@property float ticket_price_3;
+@property float ticket_price_4;
+@property float ticket_price_5;
+
+// The Total label
+@property (weak, nonatomic) IBOutlet UILabel *total_label;
 
 - (IBAction)stepper_pressed:(UIStepper *)sender;
 @end

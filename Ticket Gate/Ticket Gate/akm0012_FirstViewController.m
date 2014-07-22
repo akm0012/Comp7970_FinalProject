@@ -182,21 +182,30 @@
     
 }
 
-- (IBAction)set_up_field_done_editing:(UITextField *)sender {
+- (IBAction)cost_field_done_editing:(UITextField *)sender {
     
-    // Here I can check if the number values are valid
+    // Check to make sure the Cost value is valid
     
-    // The Names will just have some default value if left empty
+    if (![self isFloat:sender.text]) {
+        
+        sender.text = @"";
+        [self show_input_alert:@"Enter a Valid Number"];
+    }
     
-    //    switch (sender.tag) {
-    //        // Ticket Type # 1 - Name Field
-    //        case 1:
-    //            self.second_view_controller.ticket_label_1.text = self.ticket_name_field_1.text;
-    //            break;
-    //
-    //        default:
-    //            break;
-    //    }
+    else {
+        //sender.text =
+        
+        double float_amount = [sender.text doubleValue];
+        
+        NSString *formated_num;
+        
+        formated_num = [NSString stringWithFormat:@"%.2f", float_amount];
+        
+        sender.text = formated_num;
+        
+        
+        
+    }
     
 }
 
@@ -226,6 +235,27 @@
         
     }
     
+    /*  Setting the price subtitle.
+        We assume input checking has already been done.
+        Now we just need to check and make sure the field is not blank.
+    */
+    if ([self.ticket_cost_field_1.text isEqual:@""]) {
+        self.second_view_controller.ticket_subtitle_1.text = @"( Free )";
+        self.second_view_controller.ticket_price_1 = 0.00;
+    }
+    
+    else {
+        
+        self.second_view_controller.ticket_price_1 = [self.ticket_cost_field_1.text floatValue];
+        
+        NSString *temp;
+        
+        temp = [NSString stringWithFormat:@"( $%@ )", self.ticket_cost_field_1.text];
+        
+        self.second_view_controller.ticket_subtitle_1.text = temp;
+    
+    }
+    
     // Ticket Type 2
     if (self.ticket_2_active) {
         self.second_view_controller.ticket_row_image_view_2.hidden = NO;
@@ -249,6 +279,27 @@
             self.second_view_controller.ticket_label_2.text = default_ticket_string_2;
             self.second_view_controller.subtotal_label_2.text = default_ticket_string_2;
             self.ticket_name_field_2.text = default_ticket_string_2;
+        }
+        
+        /*  Setting the price subtitle.
+         We assume input checking has already been done.
+         Now we just need to check and make sure the field is not blank.
+         */
+        if ([self.ticket_cost_field_2.text isEqual:@""]) {
+            self.second_view_controller.ticket_subtitle_2.text = @"( Free )";
+            self.second_view_controller.ticket_price_2 = 0.00;
+        }
+        
+        else {
+            
+            self.second_view_controller.ticket_price_2 = [self.ticket_cost_field_2.text floatValue];
+            
+            NSString *temp;
+            
+            temp = [NSString stringWithFormat:@"( $%@ )", self.ticket_cost_field_2.text];
+            
+            self.second_view_controller.ticket_subtitle_2.text = temp;
+            
         }
         
     }
@@ -290,6 +341,27 @@
             self.ticket_name_field_3.text = default_ticket_string_3;
         }
         
+        /*  Setting the price subtitle.
+         We assume input checking has already been done.
+         Now we just need to check and make sure the field is not blank.
+         */
+        if ([self.ticket_cost_field_3.text isEqual:@""]) {
+            self.second_view_controller.ticket_subtitle_3.text = @"( Free )";
+            self.second_view_controller.ticket_price_3 = 0.00;
+        }
+        
+        else {
+            
+            self.second_view_controller.ticket_price_3 = [self.ticket_cost_field_3.text floatValue];
+            
+            NSString *temp;
+            
+            temp = [NSString stringWithFormat:@"( $%@ )", self.ticket_cost_field_3.text];
+            
+            self.second_view_controller.ticket_subtitle_3.text = temp;
+            
+        }
+        
     }
     
     else {
@@ -328,6 +400,27 @@
             self.second_view_controller.subtotal_label_4.text = default_ticket_string_4;
             self.ticket_name_field_4.text = default_ticket_string_4;
         }
+        
+        /*  Setting the price subtitle.
+         We assume input checking has already been done.
+         Now we just need to check and make sure the field is not blank.
+         */
+        if ([self.ticket_cost_field_4.text isEqual:@""]) {
+            self.second_view_controller.ticket_subtitle_4.text = @"( Free )";
+            self.second_view_controller.ticket_price_4 = 0.00;
+        }
+        
+        else {
+            
+            self.second_view_controller.ticket_price_4 = [self.ticket_cost_field_4.text floatValue];
+            
+            NSString *temp;
+            
+            temp = [NSString stringWithFormat:@"( $%@ )", self.ticket_cost_field_4.text];
+            
+            self.second_view_controller.ticket_subtitle_4.text = temp;
+            
+        }
     }
     
     else {
@@ -341,6 +434,8 @@
         self.second_view_controller.subtotal_num_display_4.hidden = YES;
         self.second_view_controller.subtotal_extras_4.hidden = YES;
     }
+    
+    
     
     // Ticket Type 5
     if (self.ticket_5_active) {
@@ -366,6 +461,27 @@
             self.second_view_controller.subtotal_label_5.text = default_ticket_string_5;
             self.ticket_name_field_5.text = default_ticket_string_5;
         }
+        
+        /*  Setting the price subtitle.
+         We assume input checking has already been done.
+         Now we just need to check and make sure the field is not blank.
+         */
+        if ([self.ticket_cost_field_5.text isEqual:@""]) {
+            self.second_view_controller.ticket_subtitle_5.text = @"( Free )";
+            self.second_view_controller.ticket_price_5 = 0.00;
+        }
+        
+        else {
+            
+            self.second_view_controller.ticket_price_5 = [self.ticket_cost_field_5.text floatValue];
+            
+            NSString *temp;
+            
+            temp = [NSString stringWithFormat:@"( $%@ )", self.ticket_cost_field_5.text];
+            
+            self.second_view_controller.ticket_subtitle_5.text = temp;
+            
+        }
     }
     
     else {
@@ -379,6 +495,40 @@
         self.second_view_controller.subtotal_num_display_5.hidden = YES;
         self.second_view_controller.subtotal_extras_5.hidden = YES;
     }
+ 
+    
+    
+}
+
+// Checks to make sure the text is a valid float
+-(bool) isFloat:(NSString*) checkText{
+    
+    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+    [f setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSNumber * myNumber = [f numberFromString:checkText];
+    
+    if (myNumber) {
+        return YES;
+    }
+    
+    else {
+        return NO;
+    }
+}
+
+// Displays an alert saying you have some input error
+- (void) show_input_alert:(NSString*) msg_in {
+    
+    NSString *alertTitleString = @"Input Error, try again!";
+    NSString *alertCancelString = @"OK";
+    
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: alertTitleString
+                          message: msg_in
+                          delegate: self
+                          cancelButtonTitle: alertCancelString
+                          otherButtonTitles:nil];
+    [alert show];
     
 }
 
