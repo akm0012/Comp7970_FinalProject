@@ -72,5 +72,23 @@
 // The Total label
 @property (weak, nonatomic) IBOutlet UILabel *total_label;
 
-- (IBAction)stepper_pressed:(UIStepper *)sender;
+// The Cash Taken label
+@property (weak, nonatomic) IBOutlet UILabel *cash_taken_label;
+
+// The Change UI Components
+@property (weak, nonatomic) IBOutlet UILabel *change_display;
+@property (weak, nonatomic) IBOutlet UILabel *change_label;
+@property (weak, nonatomic) IBOutlet UIImageView *change_UI_Image;
+
+
+
+// Called when any of the Cash Taken buttons are pressed
+- (IBAction)cash_taken_button_pressed:(UIButton *)sender;
+
+
+// Called when the CLEAR ALL button is pressed
+- (IBAction)clear_everything:(id *)sender;
+
+// Called whenever a stepper is pressed
+- (IBAction)stepper_value_changed:(id *)sender;
 @end
