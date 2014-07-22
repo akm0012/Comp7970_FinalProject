@@ -105,10 +105,15 @@
     self.ticket_num_4 = 0;
     self.ticket_num_5 = 0;
     
+    // Clear the cash taken field
+    [self clear_cash_taken];
+
     // Update everything
     [self update_ticket_num_displays];
     [self update_subtotal];
     [self update_total];
+    [self update_change];
+    
 }
 
 - (IBAction)stepper_value_changed:(id *)sender {
@@ -137,6 +142,9 @@
     
     // Update the total
     [self update_total];
+    
+    // Update the Change
+    [self update_change];
     
 }
 
@@ -179,6 +187,15 @@
     
     self.total_label.text = [NSString stringWithFormat:@"$%.2f", self.total];
 }
+
+// Clears cash taken data when either the 'C' or 'CLEAR ALL' buttons are pushed.
+- (void)clear_cash_taken {
+    self.cash_taken_string = @"";
+    self.cash_taken = 0;
+    self.decimal_active = NO;
+    self.cash_taken_label.text = [NSString stringWithFormat:@"$%.2f", self.cash_taken];
+}
+
 - (IBAction)cash_taken_button_pressed:(UIButton *)sender {
     
     switch (sender.tag) {
@@ -194,9 +211,7 @@
             
         // 'C' clear button
         case 12:
-            self.cash_taken_string = @"";
-            self.cash_taken = 0;
-            self.decimal_active = NO;
+            [self clear_cash_taken];
             break;
             
         // 0 buton
@@ -258,21 +273,51 @@
     else {
         self.cash_taken_label.text = [NSString stringWithFormat:@"$%.0f", self.cash_taken];
     }
+    
+    [self update_change];
 }
 
 - (void) update_change {
     
-//    // Change situation
-//    if (self.cash_taken - self.total) {
-//        self.change = self.cash_taken - self.total;
-//        
-//        self.change_display.text = [NSString stringWithFormat:@"$%.2f", self.change];
-//    }
-//    
-//    // Short situation
-//    else {
-//        
-//    }
+    double change;
+    double amt_short;
+    
+    // Change situation
+    if (self.cash_taken - self.total > 0) {
+        
+        change = self.cash_taken - self.total;
+        self.change_display.text = [NSString stringWithFormat:@"$%.2f", change];
+        self.change_label.text = @"Change";
+        
+        // Get the green box UI Image
+        UIImage *green_box = [UIImage imageNamed: @"green_square.png"];
+        [self.change_UI_Image setImage:green_box];
+    }
+    
+    // Exact payment situation
+    else if (self.cash_taken - self.total == 0) {
+        
+        self.change_display.text = [NSString stringWithFormat:@"$%.2f", 0.00];
+        self.change_label.text = @"Change";
+        
+        // Get the green box UI Image
+        UIImage *green_box = [UIImage imageNamed: @"green_square.png"];
+        [self.change_UI_Image setImage:green_box];
+        
+    }
+    
+    // Short situation
+    else {
+        
+        amt_short = self.total - self.cash_taken;
+        self.change_display.text = [NSString stringWithFormat:@"$%.2f", amt_short];
+        self.change_label.text = @"Short";
+        
+        // Get the red box UI Image
+        UIImage *red_box = [UIImage imageNamed: @"red_square.png"];
+        [self.change_UI_Image setImage:red_box];
+        
+    }
     
 }
 @end
