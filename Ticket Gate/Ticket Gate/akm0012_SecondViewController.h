@@ -10,6 +10,13 @@
 
 @interface akm0012_SecondViewController : UIViewController
 
+// Used to keep track of the number of each ticket
+@property int ticket_num_1;
+@property int ticket_num_2;
+@property int ticket_num_3;
+@property int ticket_num_4;
+@property int ticket_num_5;
+
 // UI compnents needed for ticket type #1 (this will always be active)
 @property (weak, nonatomic) IBOutlet UIStepper *stepper_1;
 @property (weak, nonatomic) IBOutlet UILabel *ticket_num_display_1;

@@ -314,6 +314,9 @@
         self.second_view_controller.subtotal_label_2.hidden = YES;
         self.second_view_controller.subtotal_num_display_2.hidden = YES;
         self.second_view_controller.subtotal_extras_2.hidden = YES;
+        
+        // Clear all the tickets for ticket type 2
+        self.second_view_controller.ticket_num_2 = 0;
     }
     
     // Ticket Type 3
@@ -374,6 +377,9 @@
         self.second_view_controller.subtotal_label_3.hidden = YES;
         self.second_view_controller.subtotal_num_display_3.hidden = YES;
         self.second_view_controller.subtotal_extras_3.hidden = YES;
+        
+        // Clear all the tickets for ticket type 3
+        self.second_view_controller.ticket_num_3 = 0;
     }
     
     // Ticket Type 4
@@ -433,6 +439,9 @@
         self.second_view_controller.subtotal_label_4.hidden = YES;
         self.second_view_controller.subtotal_num_display_4.hidden = YES;
         self.second_view_controller.subtotal_extras_4.hidden = YES;
+        
+        // Clear all the tickets for ticket type 4
+        self.second_view_controller.ticket_num_4 = 0;
     }
     
     
@@ -494,6 +503,9 @@
         self.second_view_controller.subtotal_label_5.hidden = YES;
         self.second_view_controller.subtotal_num_display_5.hidden = YES;
         self.second_view_controller.subtotal_extras_5.hidden = YES;
+        
+        // Clear all the tickets for ticket type 5
+        self.second_view_controller.ticket_num_5 = 0;
     }
  
     

@@ -10,13 +10,6 @@
 
 @interface akm0012_SecondViewController ()
 
-// Used to keep track of the number of each ticket
-@property int ticket_num_1;
-@property int ticket_num_2;
-@property int ticket_num_3;
-@property int ticket_num_4;
-@property int ticket_num_5;
-
 @property float subtotal_ticket_1;
 @property float subtotal_ticket_2;
 @property float subtotal_ticket_3;
@@ -43,11 +36,11 @@
 //    self.subtotal_ticket_1 = self.ticket_price_1 * self.ticket_num_1;
 //    self.subtotal_num_display_1.text = [NSString stringWithFormat:@"%.2f", self.subtotal_ticket_1];
     
-    // Update the subtotal
+    // Update everything
+    [self update_ticket_num_displays];
     [self update_subtotal];
-    
-    // Update the total
     [self update_total];
+    [self update_change];
     
 }
 
